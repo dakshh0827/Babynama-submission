@@ -25,14 +25,31 @@ Welcome to the Babynama internship assignment! This short project is designed to
 
 ### **Part 2: Submission**
 
-After you've finished coding, please complete the following two steps.
+Submission:
+1. **Live URL:** https://babynama-submission.vercel.app/
+2. **Choices Made**
+       a. Component Architecture:
+        **Created separate WebinarCard component*
+         - This promotes reusability and a maintainable code structure. Each webinar card contains complex logic for hover states, color theming, and interactive elements that would otherwise clutter the main page component.
+       b. Styling Approach:
+        **Chose Tailwind CSS with a blue color palette*
+         - This offers a professional, healthcare-appropriate aesthetic while maintaining visual hierarchy and accessibility standards.
+       c. State Management:
+        **Implemented local state with React hooks*
+         - The application's complexity doesn't require external state management libraries, which helps keep the bundle size minimal.
 
-1.  **Deploy Your Work:** Deploy your project to Vercel (it's free).
-2.  **Complete this README:** **This is the most important step.** Edit this `README.md` file in your repository to include:
-    * **Live URL:** [Add your Vercel deployment link here]
-    * **Choices Made:** [Briefly explain one technical choice you made]
-    * **Roadblock & Learning:** [Describe one small thing you had to look up and how you solved it]
-    * **Screenshot:**
-        ![Your Screenshot Here](https://via.placeholder.com/600x400.png?text=Paste+Screenshot+of+Your+App+Here)
+**Roadblock & Learning**
+      **Challenge:* Dynamic Tailwind Classes Not Rendering
+      **Problem:* Initially used dynamic class generation like `bg-${color}-500` which caused cards to appear blank because Tailwind couldn't compile these classes at build time.
+      **Solution:* Refactored to use a `getCardStyles()` function that returns predefined static class names. This ensures Tailwind can detect and compile all necessary classes during the build process.
+      **Learning:* Tailwind CSS requires class names to be statically analyzable. Dynamic class generation needs careful consideration of the purging/compilation process.
 
-To submit, please share the link to your finished GitHub repository with us. Good luck!
+
+**Screenshot**
+    **Desktop View:* ![image](https://github.com/user-attachments/assets/ca844a9c-5c15-486f-ada4-6413bf5a1fff)
+    **Mobile Responsive:* ![image](https://github.com/user-attachments/assets/a3741a58-0049-459d-b3bb-d20e4ab44314)
+
+
+**Thankyou*
+
+
