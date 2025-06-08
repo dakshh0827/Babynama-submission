@@ -24,32 +24,32 @@ Welcome to the Babynama internship assignment! This short project is designed to
 ---
 
 ### **Part 2: Submission**
+ 
+1. **Live URL:** https://babynama-submission.vercel.app/  
+2. **Choices Made**  
+       a. Component Architecture:  
+        **Created separate WebinarCard component*  
+         - This promotes reusability and a maintainable code structure. Each webinar card contains complex logic for hover states, color theming, and interactive elements that would otherwise clutter the main page component.  
+       b. Styling Approach:  
+        **Chose Tailwind CSS with a blue color palette*  
+         - This offers a professional, healthcare-appropriate aesthetic while maintaining visual hierarchy and accessibility standards.  
+       c. State Management:  
+        **Implemented local state with React hooks*  
+         - The application's complexity doesn't require external state management libraries, which helps keep the bundle size minimal.  
 
-Submission:
-1. **Live URL:** https://babynama-submission.vercel.app/
-2. **Choices Made**
-       a. Component Architecture:
-        **Created separate WebinarCard component*
-         - This promotes reusability and a maintainable code structure. Each webinar card contains complex logic for hover states, color theming, and interactive elements that would otherwise clutter the main page component.
-       b. Styling Approach:
-        **Chose Tailwind CSS with a blue color palette*
-         - This offers a professional, healthcare-appropriate aesthetic while maintaining visual hierarchy and accessibility standards.
-       c. State Management:
-        **Implemented local state with React hooks*
-         - The application's complexity doesn't require external state management libraries, which helps keep the bundle size minimal.
-
-**Roadblock & Learning**
-      a. *Challenge:* Dynamic Tailwind Classes Not Rendering.
-      b. *Problem:* Initially used dynamic class generation like `bg-${color}-500` which caused cards to appear blank because Tailwind couldn't compile these classes at build time.
-      c. *Solution:* Refactored to use a `getCardStyles()` function that returns predefined static class names. This ensures Tailwind can detect and compile all necessary classes during the build process.
-      d. *Learning:* Tailwind CSS requires class names to be statically analyzable. Dynamic class generation needs careful consideration of the purging/compilation process.
-
-
-**Screenshot**
-     a. *Desktop View:* ![image](https://github.com/user-attachments/assets/ca844a9c-5c15-486f-ada4-6413bf5a1fff)
-     b. *Mobile Responsive:* ![image](https://github.com/user-attachments/assets/a3741a58-0049-459d-b3bb-d20e4ab44314)
+**Roadblock & Learning**    
+      a. *Challenge:* Dynamic Tailwind Classes Not Rendering.  
+      b. *Problem:* Initially used dynamic class generation like `bg-${color}-500` which caused cards to appear blank because Tailwind couldn't compile these classes at build time.  
+      c. *Solution:* Refactored to use a `getCardStyles()` function that returns predefined static class names. This ensures Tailwind can detect and compile all necessary classes during the build process.  
+      d. *Learning:* Tailwind CSS requires class names to be statically analyzable. Dynamic class generation needs careful consideration of the purging/compilation process.  
 
 
-**Thankyou*
+**Screenshot**  
+     a. *Desktop View:* ![image](https://github.com/user-attachments/assets/ca844a9c-5c15-486f-ada4-6413bf5a1fff)  
+     b. *Mobile Responsive:* ![image](https://github.com/user-attachments/assets/a3741a58-0049-459d-b3bb-d20e4ab44314)  
+
+
+**Thankyou*  
+
 
 
