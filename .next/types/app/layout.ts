@@ -1,4 +1,4 @@
-// File: /home/am/gh/babynama-intern-assignment-template/app/layout.tsx
+// File: C:\Users\pc\Desktop\projects\babynama submission\Babynama-submission\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

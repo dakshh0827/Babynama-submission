@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,6 +20,18 @@ export default function Home() {
           Your task is to build the feature at the <code>/webinars</code> page.
         </p>
         <p className="mt-4 text-gray-500">Good luck!</p>
+        
+        {/* Navigation button to webinars page */}
+        <div className="mt-8">
+          <span className="text-black font-semibold">Click to see my work: Daksh Thakran</span>
+          <div className="mt-2">
+            <Link href="/webinars">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer">
+                <span>Explore Webinars</span>
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </main>
   );
