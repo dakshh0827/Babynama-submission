@@ -39,15 +39,15 @@ Submission:
          - The application's complexity doesn't require external state management libraries, which helps keep the bundle size minimal.
 
 **Roadblock & Learning**
-      **Challenge:* Dynamic Tailwind Classes Not Rendering
-      **Problem:* Initially used dynamic class generation like `bg-${color}-500` which caused cards to appear blank because Tailwind couldn't compile these classes at build time.
-      **Solution:* Refactored to use a `getCardStyles()` function that returns predefined static class names. This ensures Tailwind can detect and compile all necessary classes during the build process.
-      **Learning:* Tailwind CSS requires class names to be statically analyzable. Dynamic class generation needs careful consideration of the purging/compilation process.
+      a. *Challenge:* Dynamic Tailwind Classes Not Rendering.
+      b. *Problem:* Initially used dynamic class generation like `bg-${color}-500` which caused cards to appear blank because Tailwind couldn't compile these classes at build time.
+      c. *Solution:* Refactored to use a `getCardStyles()` function that returns predefined static class names. This ensures Tailwind can detect and compile all necessary classes during the build process.
+      d. *Learning:* Tailwind CSS requires class names to be statically analyzable. Dynamic class generation needs careful consideration of the purging/compilation process.
 
 
 **Screenshot**
-    **Desktop View:* ![image](https://github.com/user-attachments/assets/ca844a9c-5c15-486f-ada4-6413bf5a1fff)
-    **Mobile Responsive:* ![image](https://github.com/user-attachments/assets/a3741a58-0049-459d-b3bb-d20e4ab44314)
+     a. *Desktop View:* ![image](https://github.com/user-attachments/assets/ca844a9c-5c15-486f-ada4-6413bf5a1fff)
+     b. *Mobile Responsive:* ![image](https://github.com/user-attachments/assets/a3741a58-0049-459d-b3bb-d20e4ab44314)
 
 
 **Thankyou*
